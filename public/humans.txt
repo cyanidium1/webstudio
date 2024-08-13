@@ -1,0 +1,39 @@
+|| \\
+||  \\ 
+||  //
+|| // 
+||
+||    
+
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DEVELOPER | 
+
+Pughalesh Lakshmanam
+Hand crafted design & web development
+
+Design tools:
+Figma
+Photoshop
+Blender
+
+github.com/PughalBot
+
+_______________________________________________________________________________
+
+TECHNOLOGY | 
+
+React
+Next.js
+Three.js
+Framer Motion
+
+_______________________________________________________________________________
+
+FONTS | 
+
+Gotham
+Hiragino Kaku Gothic
