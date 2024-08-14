@@ -64,9 +64,10 @@ export const ProjectSummary = ({
           collapseDelay={1000}
         />
         <span className={styles.indexNumber} data-visible={visible}>
-          {indexText}
+          {indexText - 1}
         </span>
       </div>
+      <p className="text-5xl text-red-500">some text</p>
       <Heading
         level={3}
         as="h2"

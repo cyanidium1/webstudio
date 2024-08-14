@@ -1,16 +1,27 @@
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
+import bstrust from 'assets/bstrust.png';
+import bstrustLarge from 'assets/bstrust-large.png';
+
+import gr3d2Large from 'assets/3dgr1-large.jpg';
+import gr3d2 from 'assets/3dgr1.jpg';
+import gr3dLarge from 'assets/3dgr2-large.jpg';
+import gr3d from 'assets/3dgr2.jpg';
+
+import raulAvto from 'assets/raulAvto.png';
+import raulAvtoLarge from 'assets/raulAvto-large.png';
+
+import cactusLightLarge from 'assets/cactus-light-large.png';
+import cactusDarkLarge from 'assets/cactus-dark-large.png';
+import cactusLight from 'assets/cactus-light.png';
+import cactusDark from 'assets/cactus-dark.png';
+
+// stock
 import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
 import sairamBusTexture from 'assets/sairambuss-login.jpg';
 import sairamBusTextureLarge from 'assets/sairambuss-login-large.jpg';
 import sairamBusTexture2 from 'assets/sairambuss-list.jpg';
 import sairamBusTexture2Large from 'assets/sairambuss-list-large.jpg';
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
 import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
@@ -85,29 +96,10 @@ export const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
-      <ProjectSummary
-        id="project-1"
-        sectionRef={projectOne}
-        visible={visibleSections.includes(projectOne.current)}
-        index={1}
-        title="MadrasDa Website"
-        description="A Website to sell official merch of certain production house and Print On Demand design Ecommerce site."
-        buttonText="View project"
-        buttonLink="https://github.com/PughalBot/madrasda"
-        model={{
-          type: 'laptop',
-          alt: 'Home Screen of madrasda website',
-          textures: [
-            {
-              srcSet: [sprTexture, sprTextureLarge],
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
-        }}
-      />
+
       <ProjectSummary
         id="project-2"
-        alternate
+        // alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
@@ -116,22 +108,19 @@ export const Home = () => {
         buttonText="View Project"
         buttonLink="https://github.com/PughalBot/AeroEncrypt"
         model={{
-          type: 'phone',
-          alt: 'App login screen',
+          type: 'laptop',
+          alt: 'Login of the TIEMA internship tracker',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
+              srcSet: [bstrust, bstrustLarge],
+              placeholder: sliceTexturePlaceholder,
             },
           ],
         }}
       />
       <ProjectSummary
         id="project-3"
+        alternate
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
@@ -140,19 +129,23 @@ export const Home = () => {
         buttonText="View project"
         buttonLink="https://github.com/PughalBot"
         model={{
-          type: 'laptop',
-          alt: 'Login of the TIEMA internship tracker',
+          type: 'phone',
+          alt: 'App login screen',
           textures: [
             {
-              srcSet: [sliceTexture, sliceTextureLarge],
-              placeholder: sliceTexturePlaceholder,
+              srcSet: [gr3d, gr3dLarge],
+              placeholder: gamestackTexturePlaceholder,
+            },
+            {
+              srcSet: [gr3d2, gr3d2Large],
+              placeholder: gamestackTexture2Placeholder,
             },
           ],
         }}
       />
       <ProjectSummary
         id="project-4"
-        alternate
+        // alternate
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
         index={4}
@@ -161,16 +154,12 @@ export const Home = () => {
         buttonText="View Project"
         buttonLink="https://github.com/PughalBot/bus_app"
         model={{
-          type: 'phone',
-          alt: 'App login screen',
+          type: 'laptop',
+          alt: 'Login of the TIEMA internship tracker',
           textures: [
             {
-              srcSet: [sairamBusTexture, sairamBusTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [sairamBusTexture2, sairamBusTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
+              srcSet: [raulAvto, raulAvtoLarge],
+              placeholder: sliceTexturePlaceholder,
             },
           ],
         }}
@@ -189,7 +178,7 @@ export const Home = () => {
           alt: 'Home Screen of Synsara website',
           textures: [
             {
-              srcSet: [synTexture, synTextureLarge],
+              srcSet: [cactusDark, cactusDarkLarge],
               placeholder: sprTexturePlaceholder,
             },
           ],
