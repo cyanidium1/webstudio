@@ -48,7 +48,7 @@ export const Home = () => {
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, details];
+    const sections = [intro, projectTwo, projectThree, projectFour, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -103,8 +103,8 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Aero Encrypt"
-        description="An fusion offline password manager using a hybrid algorithm which is a combination of AES and RSA algorithms which can sync between devices using SSH."
+        title="Создаю сайты которые приносят деньги"
+        description="Помогу вывести любой бизнес на новый уровень с использованием самых современных технологий и user-friendly дизайна."
         buttonText="View Project"
         buttonLink="https://github.com/PughalBot/AeroEncrypt"
         model={{
@@ -124,8 +124,8 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="TIEMA Internship Tracker"
-        description="A Website to track ongoing progress of Internship done by college students using ReactJS."
+        title="Сайты которые хорошо смотрятся на любых экранах и устройствах"
+        description="Обратившись ко мне вы можете не переживать что потеряете клиента из-за того что сайт не будет работать на каком-то устройстве."
         buttonText="View project"
         buttonLink="https://github.com/PughalBot"
         model={{
@@ -149,8 +149,8 @@ export const Home = () => {
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
         index={4}
-        title="Transport Automation App"
-        description="An App and web app based Transport automation to monitor college bus and attendance of students using Flutterflow."
+        title="От простого лендинга до сложных интернет магазинов"
+        description="Берусь за любую сложность проекта. Хотите одностраничник-визитку с красивым дизайном, анимацией и мультиязычностью - пожалуйста! Хотите маркетплейс с базой данных товаров, админ-панелью и автоматическими продажами? Не вопрос :)"
         buttonText="View Project"
         buttonLink="https://github.com/PughalBot/bus_app"
         model={{
@@ -164,7 +164,7 @@ export const Home = () => {
           ],
         }}
       />
-      <ProjectSummary
+      {/* <ProjectSummary
         id="project-5"
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
@@ -183,7 +183,7 @@ export const Home = () => {
             },
           ],
         }}
-      />
+      /> */}
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}

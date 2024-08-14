@@ -232,3 +232,40 @@
     transform: none;
   }
 }
+
+/* туц */
+
+.languageDropdown {
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.languageDropdownCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.languageDropdown select {
+  /* padding: 0.5rem; */
+  padding: var(--spaceM);
+  color: rgb(var(--rgbText) / 0.8);
+  font-weight: var(--fontWeightMedium);
+  font-size: var(--headerNavFontSize);
+  text-decoration: none;
+  position: relative;
+  transition: color var(--durationS) ease 0.1s;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.languageDropdown select option {
+  background-color: black;
+}
+
+.languageDropdown select:focus {
+  outline: none;
+  border-color: #0070f3;
+}

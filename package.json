@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://pughal.in",
-  "description": "Portfolio site for Pughalesh Lakshmanan",
-  "repository": "https://github.com/PughalBot/portfolio.git",
-  "author": "Pughalesh L <hello@pughal.in>",
+  "homepage": "https://cyanidium.dev",
+  "description": "CNDM Dev.",
+  "repository": "https://github.com/cyanidium1/portfolio.git",
+  "author": "cyanidium <cyanidium1@gmail.com>",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@storybook/addon-a11y": "^6.5.10",

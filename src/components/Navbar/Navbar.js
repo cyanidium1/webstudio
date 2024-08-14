@@ -12,6 +12,7 @@ import { NavToggle } from './NavToggle';
 import styles from './Navbar.module.css';
 import { ThemeToggle } from './ThemeToggle';
 import { navLinks, socialLinks } from './navData';
+import useStore from 'utils/zustand';
 
 export const Navbar = () => {
   const [current, setCurrent] = useState();
@@ -23,9 +24,10 @@ export const Navbar = () => {
   const headerRef = useRef();
   const isMobile = windowSize.width <= media.mobile || windowSize.height <= 696;
   const scrollToHash = useScrollToHash();
+  const { language, setLanguage } = useStore();
 
   useEffect(() => {
-    // Prevent ssr mismatch by storing this in state
+    // Prevent SSR mismatch by storing this in state
     setCurrent(asPath);
   }, [asPath]);
 
@@ -36,7 +38,7 @@ export const Navbar = () => {
     scrollToHash(target, () => setTarget(null));
   }, [route, scrollToHash, target]);
 
-  // Handle swapping the theme when intersecting with inverse themed elements
+  // Handle swapping the theme when intersecting with inverse-themed elements
   useEffect(() => {
     const navItems = document.querySelectorAll('[data-navbar-item]');
     const inverseTheme = themeId === 'dark' ? 'light' : 'dark';
@@ -139,6 +141,12 @@ export const Navbar = () => {
     if (menuOpen) dispatch({ type: 'toggleMenu' });
   };
 
+  const handleLanguageChange = event => {
+    const selectedLanguage = event.target.value;
+    setLanguage(selectedLanguage);
+    console.log(`Language switched to: ${selectedLanguage}`);
+  };
+
   return (
     <header className={styles.navbar} ref={headerRef}>
       <RouterLink href={route === '/' ? '/#intro' : '/'} scroll={false}>
@@ -166,6 +174,15 @@ export const Navbar = () => {
               </a>
             </RouterLink>
           ))}
+          <div className={styles.languageDropdownCont}>
+            <div className={styles.languageDropdown}>
+              <select value={language} onChange={handleLanguageChange}>
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+                <option value="ua">UA</option>
+              </select>
+            </div>
+          </div>
         </div>
         <NavbarIcons desktop />
       </nav>

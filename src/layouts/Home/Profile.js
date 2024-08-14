@@ -18,20 +18,20 @@ import styles from './Profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there," start={visible} delay={500} />
+      <DecoderText text="Здравствуйте" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Pughal, currently I live in Chennai and I’m a Web developer and Full Stack
-      developer. You can Find my profile on{' '}
-      <Link href="https://www.linkedin.com/in/pughal/">Linkedin</Link>. My projects
-      include Web Development, E-commerce Site devlopment, and very special at Front End
-      Development. Being comfortable with code allows me to rapidly prototype and validate
-      experiences.
+      Меня зовут Федор, я родом из Украины, но сейчас живу в Албании. Работаю как
+      фрилансер, разрабатывая сайты и веб-приложения любых типов и размеров. У меня есть
+      своя команда, включающая дизайнеров, копирайтеров и специалистов по интерфейсу. Сам
+      я являюсь программистом, архитектором и менеджером проекта.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      If you’re intrested in looking my project here is the link to my{' '}
-      <Link href="https://github.com/PughalBot">GitHub</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      Почему стоит обратиться именно ко мне? Я перфекционист и действительно люблю свое
+      дело. До IT у меня было несколько успешных (и не очень) бизнес-кейсов, поэтому я
+      прекрасно понимаю, как должен выглядеть идеальный сайт как со стороны разработчкиа,
+      так и пользователя, чтобы он идеально выполнял свою роль а именно приносил прибыль.
+      Вы можете мне написать с любыми вопросами и я с радостью вас проконсультирую :)
     </Text>
   </Fragment>
 );

@@ -14,24 +14,24 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
-  {
-    label: 'Linkedin',
-    url: 'https://www.linkedin.com/in/pughal/',
-    icon: 'linkedin',
-  },
+  // {
+  //   label: 'Linkedin',
+  //   url: 'https://www.linkedin.com/in/pughal/',
+  //   icon: 'linkedin',
+  // },
   {
     label: 'Github',
-    url: 'https://github.com/PughalBot',
+    url: 'https://github.com/cyanidium1',
     icon: 'github',
   },
   {
     label: 'Whatsapp',
-    url: 'https://wa.me/919840457238',
+    url: 'https://wa.me/3559443236',
     icon: 'whatsapp',
   },
   {
-    label: 'Discord',
-    url: 'https://discord.gg/pAB5WRcpqq',
+    label: 'Telegram',
+    url: 'https://t.me/FreelancerOnMondays',
     icon: 'discord',
   },
 ];
