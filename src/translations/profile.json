@@ -1,0 +1,26 @@
+{
+  "en": {
+    "greeting": "Hello",
+    "introduction": "My name is Fedir, I'm from Ukraine but currently living in Albania. I work as a freelancer, developing websites and web applications of all types and sizes. I have my own team, including designers, copywriters, and UI specialists. I am a programmer, architect, and project manager.",
+    "reason": "Why should you choose me? I am a perfectionist and truly love what I do. Before IT, I had several successful (and not so successful) business cases, so I understand perfectly what an ideal website should look like from both a developer's and a user's perspective to perfectly fulfill its role—bringing profit. Feel free to contact me with any questions, and I will be happy to advise you :)",
+    "buttonText": "Send me a message",
+    "tag": "About Me",
+    "imageAlt": "Fedir standing in a photo"
+  },
+  "ru": {
+    "greeting": "Здравствуйте",
+    "introduction": "Меня зовут Федор, я родом из Украины, но сейчас живу в Албании. Работаю как фрилансер, разрабатывая сайты и веб-приложения любых типов и размеров. У меня есть своя команда, включающая дизайнеров, копирайтеров и специалистов по интерфейсу. Сам я являюсь программистом, архитектором и менеджером проекта.",
+    "reason": "Почему стоит обратиться именно ко мне? Я перфекционист и действительно люблю свое дело. До IT у меня было несколько успешных (и не очень) бизнес-кейсов, поэтому я прекрасно понимаю, как должен выглядеть идеальный сайт как со стороны разработчика, так и пользователя, чтобы он идеально выполнял свою роль, а именно приносил прибыль. Вы можете мне написать с любыми вопросами, и я с радостью вас проконсультирую :)",
+    "buttonText": "Напишите мне",
+    "tag": "Обо мне",
+    "imageAlt": "Федор на фотографии"
+  },
+  "ua": {
+    "greeting": "Привіт",
+    "introduction": "Мене звуть Федір, я з України, але зараз живу в Албанії. Працюю як фрілансер, розробляючи сайти та веб-додатки будь-яких типів і розмірів. У мене є власна команда, яка включає дизайнерів, копірайтерів та спеціалістів з інтерфейсів. Я програміст, архітектор і менеджер проекту.",
+    "reason": "Чому варто звернутися саме до мене? Я перфекціоніст і дійсно люблю свою справу. До IT у мене було кілька успішних (і не дуже) бізнес-кейсів, тому я чудово розумію, яким повинен бути ідеальний сайт як з боку розробника, так і користувача, щоб він ідеально виконував свою роль, а саме приносив прибуток. Ви можете написати мені з будь-якими питаннями, і я з радістю вас проконсультую :)",
+    "buttonText": "Напишіть мені",
+    "tag": "Про мене",
+    "imageAlt": "Федір на фотографії"
+  }
+}

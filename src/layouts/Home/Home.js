@@ -35,6 +35,9 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
+import useStore from 'utils/zustand';
+import translations from 'translations/home.json';
+
 const disciplines = ['Programmer', 'Game dev.', 'Designer'];
 
 export const Home = () => {
@@ -83,12 +86,20 @@ export const Home = () => {
     };
   }, [visibleSections]);
 
+  // translations
+
+  const { language } = useStore();
+  const [currentTranslations, setCurrentTranslations] = useState(translations[language]);
+
+  useEffect(() => {
+    setCurrentTranslations(translations[language]);
+  }, [language]);
+
   return (
     <div className={styles.home}>
       <Meta
-        title="Developer"
-        description="Portfolio of Pughalesh — a Full Stack Developer working on web & mobile
-          apps with a focus on motion, experience design, and accessibility."
+        title={currentTranslations.title}
+        description={currentTranslations.description}
       />
       <Intro
         id="intro"
@@ -99,12 +110,11 @@ export const Home = () => {
 
       <ProjectSummary
         id="project-2"
-        // alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Создаю сайты которые приносят деньги"
-        description="Помогу вывести любой бизнес на новый уровень с использованием самых современных технологий и user-friendly дизайна."
+        title={currentTranslations.projects.project1.title}
+        description={currentTranslations.projects.project1.description}
         buttonText="View Project"
         buttonLink="https://github.com/PughalBot/AeroEncrypt"
         model={{
@@ -124,8 +134,8 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Сайты которые хорошо смотрятся на любых экранах и устройствах"
-        description="Обратившись ко мне вы можете не переживать что потеряете клиента из-за того что сайт не будет работать на каком-то устройстве."
+        title={currentTranslations.projects.project2.title}
+        description={currentTranslations.projects.project2.description}
         buttonText="View project"
         buttonLink="https://github.com/PughalBot"
         model={{
@@ -145,12 +155,11 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-4"
-        // alternate
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
         index={4}
-        title="От простого лендинга до сложных интернет магазинов"
-        description="Берусь за любую сложность проекта. Хотите одностраничник-визитку с красивым дизайном, анимацией и мультиязычностью - пожалуйста! Хотите маркетплейс с базой данных товаров, админ-панелью и автоматическими продажами? Не вопрос :)"
+        title={currentTranslations.projects.project3.title}
+        description={currentTranslations.projects.project3.description}
         buttonText="View Project"
         buttonLink="https://github.com/PughalBot/bus_app"
         model={{
@@ -164,26 +173,6 @@ export const Home = () => {
           ],
         }}
       />
-      {/* <ProjectSummary
-        id="project-5"
-        sectionRef={projectOne}
-        visible={visibleSections.includes(projectOne.current)}
-        index={5}
-        title="Synsara22 Website"
-        description="A Website to make people register for the events conducted by CSE department of Sri Sairam Engineering College."
-        buttonText="View project"
-        buttonLink="https://github.com/PughalBot/synsara2022"
-        model={{
-          type: 'laptop',
-          alt: 'Home Screen of Synsara website',
-          textures: [
-            {
-              srcSet: [cactusDark, cactusDarkLarge],
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
-        }}
-      /> */}
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}

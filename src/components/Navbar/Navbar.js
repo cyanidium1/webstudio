@@ -174,6 +174,7 @@ export const Navbar = () => {
               </a>
             </RouterLink>
           ))}
+
           <div className={styles.languageDropdownCont}>
             <div className={styles.languageDropdown}>
               <select value={language} onChange={handleLanguageChange}>

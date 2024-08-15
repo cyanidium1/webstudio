@@ -11,32 +11,34 @@ import { Link } from 'components/Link';
 import { Section } from 'components/Section';
 import { Text } from 'components/Text';
 import { Transition } from 'components/Transition';
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useEffect } from 'react';
+import useStore from 'utils/zustand';
 import { media } from 'utils/style';
+import translations from 'translations/profile.json';
 import styles from './Profile.module.css';
 
-const ProfileText = ({ visible, titleId }) => (
+const ProfileText = ({ visible, titleId, content }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Здравствуйте" start={visible} delay={500} />
+      <DecoderText text={content.greeting} start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Меня зовут Федор, я родом из Украины, но сейчас живу в Албании. Работаю как
-      фрилансер, разрабатывая сайты и веб-приложения любых типов и размеров. У меня есть
-      своя команда, включающая дизайнеров, копирайтеров и специалистов по интерфейсу. Сам
-      я являюсь программистом, архитектором и менеджером проекта.
+      {content.introduction}
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Почему стоит обратиться именно ко мне? Я перфекционист и действительно люблю свое
-      дело. До IT у меня было несколько успешных (и не очень) бизнес-кейсов, поэтому я
-      прекрасно понимаю, как должен выглядеть идеальный сайт как со стороны разработчкиа,
-      так и пользователя, чтобы он идеально выполнял свою роль а именно приносил прибыль.
-      Вы можете мне написать с любыми вопросами и я с радостью вас проконсультирую :)
+      {content.reason}
     </Text>
   </Fragment>
 );
 
 export const Profile = ({ id, visible, sectionRef }) => {
+  const { language } = useStore();
+  const [content, setContent] = useState(translations[language]);
+
+  useEffect(() => {
+    setContent(translations[language]);
+  }, [language]);
+
   const [focused, setFocused] = useState(false);
   const titleId = `${id}-title`;
 
@@ -55,7 +57,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
         {visible => (
           <div className={styles.content}>
             <div className={styles.column}>
-              <ProfileText visible={visible} titleId={titleId} />
+              <ProfileText visible={visible} titleId={titleId} content={content} />
               <Button
                 secondary
                 className={styles.button}
@@ -63,7 +65,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 href="/contact"
                 icon="send"
               >
-                Send me a message
+                {content.buttonText}
               </Button>
             </div>
             <div className={styles.column}>
@@ -75,7 +77,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   collapseDelay={1000}
                 />
                 <div className={styles.tagText} data-visible={visible}>
-                  About Me
+                  {content.tag}
                 </div>
               </div>
               <div className={styles.image}>
@@ -85,7 +87,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   placeholder={profileImgPlaceholder}
                   srcSet={[profileImg, profileImgLarge]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Pughalesh Lakshmanan standing in a Photo Leaning on a porsche cayman car in the streets of malaysia"
+                  alt={content.imageAlt}
                 />
                 <svg
                   aria-hidden="true"

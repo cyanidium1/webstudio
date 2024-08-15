@@ -1,0 +1,56 @@
+{
+  "en": {
+    "title": "Developer",
+    "description": "Portfolio of Fedir — a Full Stack Developer working on web & mobile apps with a focus on motion, experience design, and accessibility.",
+    "projects": {
+      "project1": {
+        "title": "Creating websites that bring in money",
+        "description": "I'll help take any business to the next level using the latest technologies and user-friendly design."
+      },
+      "project2": {
+        "title": "Websites that look great on all screens and devices",
+        "description": "By contacting me, you can be sure that you won't lose clients due to your site not working on a particular device."
+      },
+      "project3": {
+        "title": "From simple landing pages to complex e-commerce sites",
+        "description": "I take on projects of any complexity. Need a single-page business card with a beautiful design, animation, and multilingual support? No problem! Want a marketplace with a product database, admin panel, and automated sales? Not an issue :)"
+      }
+    }
+  },
+  "ru": {
+    "title": "Разработчик",
+    "description": "Портфолио Федора — Full Stack Разработчика, работающего над веб- и мобильными приложениями с акцентом на анимацию, проектирование опыта и доступность.",
+    "projects": {
+      "project1": {
+        "title": "Создание сайтов, которые приносят деньги",
+        "description": "Помогу вывести любой бизнес на новый уровень, используя новейшие технологии и удобный дизайн."
+      },
+      "project2": {
+        "title": "Сайты, которые отлично смотрятся на всех экранах и устройствах",
+        "description": "Обратившись ко мне, вы можете быть уверены, что не потеряете клиентов из-за того, что сайт не работает на каком-то устройстве."
+      },
+      "project3": {
+        "title": "От простых лендингов до сложных интернет-магазинов",
+        "description": "Беру проекты любой сложности. Нужна одностраничная визитка с красивым дизайном, анимацией и поддержкой нескольких языков? Без проблем! Хотите маркетплейс с базой данных товаров, админ-панелью и автоматизированными продажами? Без вопросов :)"
+      }
+    }
+  },
+  "ua": {
+    "title": "Розробник",
+    "description": "Портфоліо Федора — Full Stack Розробника, який працює над веб- та мобільними додатками з акцентом на анімацію, проектування досвіду та доступність.",
+    "projects": {
+      "project1": {
+        "title": "Створення сайтів, які приносять гроші",
+        "description": "Допоможу вивести будь-який бізнес на новий рівень, використовуючи новітні технології та зручний дизайн."
+      },
+      "project2": {
+        "title": "Сайти, які чудово виглядають на всіх екранах та пристроях",
+        "description": "Звернувшись до мене, ви можете бути впевнені, що не втратите клієнтів через те, що сайт не працює на певному пристрої."
+      },
+      "project3": {
+        "title": "Від простих лендінгів до складних інтернет-магазинів",
+        "description": "Беруся за проекти будь-якої складності. Потрібен односторінковий сайт-візитка з гарним дизайном, анімацією та підтримкою кількох мов? Не проблема! Хочете маркетплейс з базою даних товарів, адмін-панеллю та автоматизованими продажами? Без питань :)"
+      }
+    }
+  }
+}
