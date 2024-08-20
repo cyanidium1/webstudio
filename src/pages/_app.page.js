@@ -1,5 +1,6 @@
 import 'layouts/App/reset.css';
 import 'layouts/App/global.css';
+import 'layouts/App/TailwindImport.css';
 
 import { Navbar } from 'components/Navbar';
 import { ThemeProvider } from 'components/ThemeProvider';

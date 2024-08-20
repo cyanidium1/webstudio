@@ -67,6 +67,7 @@ export const ProjectSummary = ({
           {indexText - 1}
         </span>
       </div>
+      <p className="text-red-600">Kek</p>
       <Heading
         level={3}
         as="h2"

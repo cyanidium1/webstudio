@@ -1,6 +1,7 @@
 module.exports = {
   plugins: {
     'postcss-flexbugs-fixes': {},
+    tailwindcss: {}, // Ensure Tailwind CSS is processed first
     'postcss-preset-env': {
       autoprefixer: {
         flexbox: 'no-2009',
