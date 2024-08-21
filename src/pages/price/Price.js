@@ -18,6 +18,7 @@ import translations from 'translations/uses.json';
 import styles from './Price.module.css';
 import PriceList from 'components/Card/Card';
 import { List, ListItem } from 'components/List';
+import { Link } from 'components/Link';
 
 export const Price = () => {
   const { language } = useStore();
