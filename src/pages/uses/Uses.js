@@ -4,7 +4,6 @@ import { Footer } from 'components/Footer';
 import { Link } from 'components/Link';
 import { List, ListItem } from 'components/List';
 import { Meta } from 'components/Meta';
-import { Table, TableBody, TableCell, TableHeadCell, TableRow } from 'components/Table';
 import {
   ProjectBackground,
   ProjectContainer,
@@ -15,15 +14,26 @@ import {
   ProjectSectionText,
   ProjectTextRow,
 } from 'layouts/Project';
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
+import useStore from 'utils/zustand';
+import translations from 'translations/uses.json';
 import styles from './Uses.module.css';
+import PriceList from 'components/Card/Card';
+// import InteractiveCards from 'components/Card/Card';
 
 export const Uses = () => {
+  const { language } = useStore();
+  const [currentTranslations, setCurrentTranslations] = useState(translations[language]);
+
+  useEffect(() => {
+    setCurrentTranslations(translations[language]);
+  }, [language]);
+
   return (
     <Fragment>
       <Meta
-        title="Uses"
-        description="A list of hardware and software I use to do my thing"
+        title={currentTranslations.title}
+        description={currentTranslations.description}
       />
       <ProjectContainer className={styles.uses}>
         <ProjectBackground
@@ -32,45 +42,92 @@ export const Uses = () => {
           opacity={0.7}
         />
         <ProjectHeader
-          title="Uses"
-          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
+          title={currentTranslations.headerTitle}
+          description={currentTranslations.headerDescription}
         />
+        <PriceList
+          ctaText={currentTranslations.ctaText}
+          cards={[
+            {
+              title: 'Лендинг',
+              price: 'от 400$',
+              features: [
+                '1-3 страницы',
+                'дизайн, ночная тема',
+                'версии для всех экранов',
+                'анимация',
+                'контактная форма с отправкой на почту или в мессенджер',
+                'SEO оптимизация',
+                'мультиязычность',
+                'срок 5-7 дней',
+              ],
+            },
+            {
+              title: 'Корпоративный сайт',
+              price: 'от 600$',
+              features: [
+                '5+ страниц',
+                'дизайн, ночная тема',
+                'версии для всех экранов',
+                'анимация',
+                'контактная форма с отправкой на почту или в мессенджер',
+                'SEO оптимизация',
+                'мультиязычность',
+                'админ панель для списка услуг и новостей',
+                'срок 7-10 дней',
+              ],
+            },
+            {
+              title: 'Интернет-магазин',
+              price: 'от 1000$',
+              features: [
+                '5+ страниц',
+                'автоматически создаваемые индивидуальные страницы для товаров',
+                'версии для всех экранов',
+                'анимация',
+                'контактная форма с отправкой на почту или в мессенджер',
+                'подключение платежных систем',
+                'мультиязычность',
+                'админ панель для списка услуг и новостей',
+                'срок 14-30 дней',
+              ],
+            },
+            {
+              title: 'Индивидуальный проект',
+              price: '1000$',
+              features: [
+                'дизайн',
+                'адаптивная верстка',
+                'анимация',
+                'контактная форма',
+                'SEO оптимизация',
+                'срок 14-21 день',
+              ],
+            },
+          ]}
+        />
+
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
-              <ProjectSectionHeading>Development</ProjectSectionHeading>
+              <ProjectSectionHeading>
+                {currentTranslations.developmentHeading}
+              </ProjectSectionHeading>
               <ProjectSectionText as="div">
                 <List>
-                  <ListItem>
-                    I use{' '}
-                    <Link href="https://code.visualstudio.com/">Visual Studio Code</Link>{' '}
-                    as my text editor, with the Atom One Dark theme and Operator Mono as
-                    my typeface of choice.
-                  </ListItem>
-                  <ListItem>
-                    Firefox is my main browser for both development and general use.
-                  </ListItem>
-                  <ListItem>
-                    <Link href="https://reactjs.org/">React</Link> is my front end
-                    Javascript library of choice. The component-centric mental model is
-                    the first thing that truly made sense to me as a designer.
-                  </ListItem>
-                  <ListItem>
-                    For 3D effects and image shaders I use{' '}
-                    <Link href="https://threejs.org/">three.js</Link>. It has a bit of a
-                    learning curve but you can do some really powerful stuff with it.
-                  </ListItem>
-                  <ListItem>
-                    For CSS I’ve used a myriad pre-processors and css-in-js solutions like
-                    styled-components, but these days I’m using vanilla CSS with{' '}
-                    <Link href="https://postcss.org/">PostCSS</Link> to get upcoming CSS
-                    features today.
-                  </ListItem>
-                  <ListItem>
-                    For Javascript animations I use{' '}
-                    <Link href="https://www.framer.com/motion/">Framer Motion</Link>, it’s
-                    a great way to add spring animations to React and three.js.
-                  </ListItem>
+                  {currentTranslations.listItems.map((item, index) => (
+                    <ListItem key={index}>
+                      {item.split(' ').map((word, i) => (
+                        <span key={i}>
+                          {word.includes('http') ? (
+                            <Link href={word}>{word.replace('https://', '')}</Link>
+                          ) : (
+                            word + ' '
+                          )}
+                        </span>
+                      ))}
+                    </ListItem>
+                  ))}
                 </List>
               </ProjectSectionText>
             </ProjectTextRow>
