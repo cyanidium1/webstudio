@@ -1,44 +1,218 @@
 {
   "en": {
+    "listItems": [
+      "Landing Page: A simple one or multi-page website, perfect for promoting a service or selling a limited number of products. Ideal for courses, exclusive products like car accessories, and more. The landing page usually features a beautiful design, mobile and tablet versions, and a contact form for placing orders or inquiries. It’s straightforward and quick to build.",
+      "Corporate Website: An extended version of a landing page, often used by companies offering a wide range of services. For example, a construction company might have a corporate website with dedicated pages for each of its 20+ services. It typically includes an admin panel for adding new services, updating prices, and editing descriptions. It often supports multiple languages and takes a bit longer to develop.",
+      "E-commerce Website: A full-fledged online store designed for automated selling of products. It includes various pages, categories, filtering, and sorting options, and integrates payment systems for managing orders. The admin panel allows you to add, remove, or edit products easily. The cost of an e-commerce site can range from $1,000 to $5,000, depending on the size and complexity.",
+      "Custom Project: For unique website needs that don’t fit into the other categories. Examples include a photographer's portfolio site that features a gallery with an admin panel for adding new photos, or a resume website that serves as an interactive, online CV. Custom projects are highly individualized, and prices vary based on the requirements."
+    ],
     "title": "Website Development Services",
     "description": "An overview of pricing for my web development services",
     "headerTitle": "Website Development",
     "headerDescription": "I am a freelance web developer specializing in creating high-quality websites using modern frameworks like React and Next.js. My websites are fast, responsive, and adaptable, with support for multiple languages and themes. The prices listed below are approximate and meant to give you an idea of the range. Each project is unique and will be priced individually. Below, you'll find examples of different categories of websites with a button to learn more about the pricing and features of each type.",
     "developmentHeading": "Development",
     "ctaText": "Learn More",
-    "listItems": [
-      "Landing Page: A simple one or multi-page website, perfect for promoting a service or selling a limited number of products. Ideal for courses, exclusive products like car accessories, and more. The landing page usually features a beautiful design, mobile and tablet versions, and a contact form for placing orders or inquiries. It’s straightforward and quick to build.",
-      "Corporate Website: An extended version of a landing page, often used by companies offering a wide range of services. For example, a construction company might have a corporate website with dedicated pages for each of its 20+ services. It typically includes an admin panel for adding new services, updating prices, and editing descriptions. It often supports multiple languages and takes a bit longer to develop.",
-      "E-commerce Website: A full-fledged online store designed for automated selling of products. It includes various pages, categories, filtering, and sorting options, and integrates payment systems for managing orders. The admin panel allows you to add, remove, or edit products easily. The cost of an e-commerce site can range from $1,000 to $5,000, depending on the size and complexity.",
-      "Custom Project: For unique website needs that don’t fit into the other categories. Examples include a photographer's portfolio site that features a gallery with an admin panel for adding new photos, or a resume website that serves as an interactive, online CV. Custom projects are highly individualized, and prices vary based on the requirements."
+    "cards": [
+      {
+        "title": "Landing Page",
+        "price": "from $400",
+        "features": [
+          "1-3 pages",
+          "Design, dark theme",
+          "Responsive versions for all screens",
+          "Animations",
+          "Contact form with email or messenger integration",
+          "SEO optimization",
+          "Multilingual support",
+          "5-7 days to complete"
+        ]
+      },
+      {
+        "title": "Corporate Website",
+        "price": "from $600",
+        "features": [
+          "5+ pages",
+          "Design, dark theme",
+          "Responsive versions for all screens",
+          "Animations",
+          "Contact form with email or messenger integration",
+          "SEO optimization",
+          "Multilingual support",
+          "Admin panel for services and news",
+          "7-10 days to complete"
+        ]
+      },
+      {
+        "title": "E-commerce Website",
+        "price": "from $1000",
+        "features": [
+          "5+ pages",
+          "Automatically generated individual product pages",
+          "Responsive versions for all screens",
+          "Animations",
+          "Contact form with email or messenger integration",
+          "Payment system integration",
+          "Multilingual support",
+          "Admin panel for services and news",
+          "14-30 days to complete"
+        ]
+      },
+      {
+        "title": "Custom Project",
+        "price": "from $1000",
+        "features": [
+          "Design",
+          "Responsive layout",
+          "Animations",
+          "Contact form",
+          "SEO optimization",
+          "14-21 days to complete"
+        ]
+      }
     ]
   },
   "ru": {
+    "listItems": [
+      "Лендинг: Простой сайт, обычно состоящий из одной или нескольких страниц, идеален для продвижения услуги или продажи ограниченного количества товаров. Подходит для курсов, эксклюзивных товаров, таких как аксессуары для автомобилей и прочего. Лендинг обычно имеет красивый дизайн, версии для мобильных устройств и планшетов, а также контактную форму для оформления заказов или запросов. Разработка занимает немного времени.",
+      "Корпоративный сайт: Расширенная версия лендинга, часто используемая компаниями, предлагающими широкий спектр услуг. Например, строительная компания может иметь корпоративный сайт с отдельными страницами для каждой из своих 20+ услуг. Обычно включает админ-панель для добавления новых услуг, изменения цен и описаний. Часто поддерживает многоязычность и требует больше времени на разработку.",
+      "Интернет-магазин: Полноценный онлайн-магазин, предназначенный для автоматизированной продажи товаров. Включает различные страницы, категории, фильтры и опции сортировки, а также интеграцию с платежными системами для управления заказами. Админ-панель позволяет легко добавлять, удалять или редактировать товары. Стоимость интернет-магазина может варьироваться от $1,000 до $5,000 в зависимости от размера и сложности.",
+      "Индивидуальный проект: Для уникальных потребностей, которые не попадают под другие категории. Примеры включают сайт портфолио для фотографа с галереей и админ-панелью для добавления новых фотографий, или сайт-резюме, который служит интерактивным онлайн-CV. Индивидуальные проекты высоко персонализированы, и их стоимость варьируется в зависимости от требований."
+    ],
     "title": "Услуги по разработке сайтов",
     "description": "Обзор цен на мои услуги по разработке сайтов",
     "headerTitle": "Разработка сайтов",
     "headerDescription": "Я фрилансер, занимаюсь разработкой сайтов на чистом коде, используя современные фреймворки, такие как React и Next.js. Мои сайты работают быстро, адаптивны, поддерживают несколько языков и тем. Цены ниже указаны ориентировочно и предназначены для того, чтобы дать вам представление о порядке стоимости. Каждый проект уникален и оценивается индивидуально. Ниже приведены примеры различных категорий сайтов с возможностью узнать больше о ценах и особенностях каждого типа.",
     "developmentHeading": "Разработка",
     "ctaText": "Узнать больше",
-    "listItems": [
-      "Лендинг: Простой сайт, обычно состоящий из одной или нескольких страниц, идеален для продвижения услуги или продажи ограниченного количества товаров. Подходит для курсов, эксклюзивных товаров, таких как аксессуары для автомобилей и прочего. Лендинг обычно имеет красивый дизайн, версии для мобильных устройств и планшетов, а также контактную форму для оформления заказов или запросов. Разработка занимает немного времени.",
-      "Корпоративный сайт: Расширенная версия лендинга, часто используемая компаниями, предлагающими широкий спектр услуг. Например, строительная компания может иметь корпоративный сайт с отдельными страницами для каждой из своих 20+ услуг. Обычно включает админ-панель для добавления новых услуг, изменения цен и описаний. Часто поддерживает многоязычность и требует больше времени на разработку.",
-      "Интернет-магазин: Полноценный онлайн-магазин, предназначенный для автоматизированной продажи товаров. Включает различные страницы, категории, фильтры и опции сортировки, а также интеграцию с платежными системами для управления заказами. Админ-панель позволяет легко добавлять, удалять или редактировать товары. Стоимость интернет-магазина может варьироваться от $1,000 до $5,000 в зависимости от размера и сложности.",
-      "Индивидуальный проект: Для уникальных потребностей, которые не попадают под другие категории. Примеры включают сайт портфолио для фотографа с галереей и админ-панелью для добавления новых фотографий, или сайт-резюме, который служит интерактивным онлайн-CV. Индивидуальные проекты высоко персонализированы, и их стоимость варьируется в зависимости от требований."
+    "cards": [
+      {
+        "title": "Лендинг",
+        "price": "от 400$",
+        "features": [
+          "1-3 страницы",
+          "дизайн, ночная тема",
+          "версии для всех экранов",
+          "анимация",
+          "контактная форма с отправкой на почту или в мессенджер",
+          "SEO оптимизация",
+          "мультиязычность",
+          "срок 5-7 дней"
+        ]
+      },
+      {
+        "title": "Корпоративный сайт",
+        "price": "от 600$",
+        "features": [
+          "5+ страниц",
+          "дизайн, ночная тема",
+          "версии для всех экранов",
+          "анимация",
+          "контактная форма с отправкой на почту или в мессенджер",
+          "SEO оптимизация",
+          "мультиязычность",
+          "админ панель для списка услуг и новостей",
+          "срок 7-10 дней"
+        ]
+      },
+      {
+        "title": "Интернет-магазин",
+        "price": "от 1000$",
+        "features": [
+          "5+ страниц",
+          "автоматически создаваемые индивидуальные страницы для товаров",
+          "версии для всех экранов",
+          "анимация",
+          "контактная форма с отправкой на почту или в мессенджер",
+          "подключение платежных систем",
+          "мультиязычность",
+          "админ панель для списка услуг и новостей",
+          "срок 14-30 дней"
+        ]
+      },
+      {
+        "title": "Индивидуальный проект",
+        "price": "от 1000$",
+        "features": [
+          "дизайн",
+          "адаптивная верстка",
+          "анимация",
+          "контактная форма",
+          "SEO оптимизация",
+          "срок 14-21 день"
+        ]
+      }
     ]
   },
   "ua": {
+    "listItems": [
+      "Лендинг: Простий сайт, зазвичай складається з однієї або кількох сторінок, ідеально підходить для просування послуги або продажу обмеженої кількості товарів. Підходить для курсів, ексклюзивних товарів, таких як аксесуари для автомобілів тощо. Лендинг зазвичай має красивий дизайн, версії для мобільних пристроїв та планшетів, а також контактну форму для оформлення замовлень або запитів. Розробка займає небагато часу.",
+      "Корпоративний сайт: Розширена версія лендингу, часто використовується компаніями, що пропонують широкий спектр послуг. Наприклад, будівельна компанія може мати корпоративний сайт з окремими сторінками для кожної зі своїх 20+ послуг. Зазвичай включає адмін-панель для додавання нових послуг, зміни цін та описів. Часто підтримує багатомовність і вимагає більше часу на розробку.",
+      "Інтернет-магазин: Повноцінний онлайн-магазин, призначений для автоматизованого продажу товарів. Включає різні сторінки, категорії, фільтри та опції сортування, а також інтеграцію з платіжними системами для управління замовленнями. Адмін-панель дозволяє легко додавати, видаляти або редагувати товари. Вартість інтернет-магазину може варіюватися від $1,000 до $5,000 в залежності від розміру і складності.",
+      "Індивідуальний проект: Для унікальних потреб, які не підпадають під інші категорії. Приклади включають сайт-портфоліо для фотографа з галереєю та адмін-панеллю для додавання нових фотографій, або сайт-резюме, що служить інтерактивним онлайн-CV. Індивідуальні проекти високо персоналізовані, і їх вартість варіюється в залежності від вимог."
+    ],
     "title": "Послуги з розробки сайтів",
     "description": "Огляд цін на мої послуги з розробки сайтів",
     "headerTitle": "Розробка сайтів",
     "headerDescription": "Я фрілансер, займаюся розробкою сайтів на чистому коді, використовуючи сучасні фреймворки, такі як React і Next.js. Мої сайти працюють швидко, адаптивні, підтримують кілька мов і тем. Ціни нижче наведені орієнтовно і призначені для того, щоб дати вам уявлення про порядок вартості. Кожен проект унікальний і оцінюється індивідуально. Нижче наведено приклади різних категорій сайтів з можливістю дізнатися більше про ціни та особливості кожного типу.",
     "developmentHeading": "Розробка",
     "ctaText": "Дізнатися більше",
-    "listItems": [
-      "Лендинг: Простий сайт, зазвичай складається з однієї або кількох сторінок, ідеально підходить для просування послуги або продажу обмеженої кількості товарів. Підходить для курсів, ексклюзивних товарів, таких як аксесуари для автомобілів тощо. Лендинг зазвичай має красивий дизайн, версії для мобільних пристроїв та планшетів, а також контактну форму для оформлення замовлень або запитів. Розробка займає небагато часу.",
-      "Корпоративний сайт: Розширена версія лендингу, часто використовується компаніями, що пропонують широкий спектр послуг. Наприклад, будівельна компанія може мати корпоративний сайт з окремими сторінками для кожної зі своїх 20+ послуг. Зазвичай включає адмін-панель для додавання нових послуг, зміни цін та описів. Часто підтримує багатомовність і вимагає більше часу на розробку.",
-      "Інтернет-магазин: Повноцінний онлайн-магазин, призначений для автоматизованого продажу товарів. Включає різні сторінки, категорії, фільтри та опції сортування, а також інтеграцію з платіжними системами для управління замовленнями. Адмін-панель дозволяє легко додавати, видаляти або редагувати товари. Вартість інтернет-магазину може варіюватися від $1,000 до $5,000 в залежності від розміру і складності.",
-      "Індивідуальний проект: Для унікальних потреб, які не підпадають під інші категорії. Приклади включають сайт-портфоліо для фотографа з галереєю та адмін-панеллю для додавання нових фотографій, або сайт-резюме, що служить інтерактивним онлайн-CV. Індивідуальні проекти високо персоналізовані, і їх вартість варіюється в залежності від вимог."
+    "cards": [
+      {
+        "title": "Лендинг",
+        "price": "від 400$",
+        "features": [
+          "1-3 сторінки",
+          "дизайн, нічна тема",
+          "версії для всіх екранів",
+          "анімація",
+          "контактна форма з відправкою на пошту або в месенджер",
+          "SEO оптимізація",
+          "багатомовність",
+          "термін 5-7 днів"
+        ]
+      },
+      {
+        "title": "Корпоративний сайт",
+        "price": "від 600$",
+        "features": [
+          "5+ сторінок",
+          "дизайн, нічна тема",
+          "версії для всіх екранів",
+          "анімація",
+          "контактна форма з відправкою на пошту або в месенджер",
+          "SEO оптимізація",
+          "багатомовність",
+          "адмін панель для списку послуг та новин",
+          "термін 7-10 днів"
+        ]
+      },
+      {
+        "title": "Інтернет-магазин",
+        "price": "від 1000$",
+        "features": [
+          "5+ сторінок",
+          "автоматично створювані індивідуальні сторінки для товарів",
+          "версії для всіх екранів",
+          "анімація",
+          "контактна форма з відправкою на пошту або в месенджер",
+          "підключення платіжних систем",
+          "багатомовність",
+          "адмін панель для списку послуг та новин",
+          "термін 14-30 днів"
+        ]
+      },
+      {
+        "title": "Індивідуальний проект",
+        "price": "від 1000$",
+        "features": [
+          "дизайн",
+          "адаптивна верстка",
+          "анімація",
+          "контактна форма",
+          "SEO оптимізація",
+          "термін 14-21 день"
+        ]
+      }
     ]
   }
 }
