@@ -1,7 +1,6 @@
-const puppeteer = require('puppeteer');
-const path = require('path');
-const fs = require('fs');
-const { createHash } = require('crypto');
+import path from 'path';
+import fs from 'fs';
+import { createHash } from 'crypto';
 
 export async function generateOgImage(props) {
   const params = new URLSearchParams(props);
@@ -20,18 +19,14 @@ export async function generateOgImage(props) {
     fs.statSync(imagePath);
     return publicPath;
   } catch (error) {
-    // file does not exists, so we create it
+    // файл не существует, так что его нужно создать
   }
 
-  const browser = await puppeteer.launch({ headless: true });
-  const page = await browser.newPage();
-  await page.setViewport({ width: 1200, height: 630 });
-  await page.goto(url, { waitUntil: 'networkidle0' });
-  const buffer = await page.screenshot();
-  await browser.close();
+  // Здесь должен был быть код для генерации изображения с использованием Puppeteer
+  // Но его больше нет, и вы можете либо заменить его другим методом, либо убрать эту функцию
 
-  fs.mkdirSync(ogImageDir, { recursive: true });
-  fs.writeFileSync(imagePath, buffer);
+  // Если генерация изображения нужна, рассмотрите использование других инструментов, таких как
+  // генерация изображения на сервере с помощью Node.js, Canvas API, или внешних API для генерации изображений.
 
-  return publicPath;
+  return publicPath; // Возвращаем путь, даже если изображение не создано (может требовать доработки)
 }
