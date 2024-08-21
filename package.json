@@ -53,7 +53,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export build/",
+    "build": "next build",
     "build:storybook": "build-storybook build-storybook && node scripts/draco-storybook",
     "deploy": "aws s3 sync --delete build/ s3://hamish-portfolio-site",
     "deploy:storybook": "aws s3 sync --delete build-storybook s3://hamish-portfolio-storybook",
